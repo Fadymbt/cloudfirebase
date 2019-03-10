@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <title> Home Page </title>
+    <link rel="stylesheet" href="/stylesheets/bootstrap.css">
+    <script src="/javascripts/jquery.js"></script>
+    <script src="/javascripts/validateUsername.js"></script>
+    <script src="/javascripts/bootstrap.js"></script>
+
+</head>
+
+<body>
+
+<div class="jumbotron">
+    <div class="container text-center">
+        <h1> Welcome ya 3am <%= message %> </h1>
+    </div>
+</div>
+
+<div class="container text-center">
+    <h3> Now that you've signed up, we would like to tell you Congratulations on joining the most useless website on the planet!! </h3>
+    <h3> Please Click here to logout </h3>
+    <img src="/images/1.png" style="width: 50px; height: 100px">
+    <br>
+
+</div>
+<div class="container text-center">
+    <form id="myform" method="get" action="/users/logout">
+        <a href="#"  class="btn btn-dark" onclick="document.getElementById('myform').submit()">Logout </a>
+    </form>
+</div>
+
+</body>
+
+</html>
