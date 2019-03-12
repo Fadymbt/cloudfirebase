@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://cloudfirebase:cloudfirebase123@ds163905.mlab.com:63905/cloudfirebase', { useNewUrlParser: true });
+mongoose.connect('mongodb+srv://fadymbt:fadymbt@cloudfirebase-neyas.mongodb.net/test?retryWrites=true', { useNewUrlParser: true });
 
 const db = mongoose.connection;
 
